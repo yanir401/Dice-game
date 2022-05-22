@@ -4,9 +4,7 @@ import "../App.css";
 export default class Players extends Component {
   state = { score: "123", temporarayScore: "123" };
 
-  componentDidMount() {
-    const player = this.props.currentlyPlaying;
-  }
+  componentDidMount() {}
 
   render() {
     return (
