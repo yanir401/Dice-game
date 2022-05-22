@@ -121,4 +121,11 @@ input {
   :root {
     font-size: 12px;
   }
+  .popUp {
+    width: 75%;
+    height: 75vh;
+  }
+  button {
+    max-width: 35%;
+  }
 }
