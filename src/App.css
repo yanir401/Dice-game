@@ -1,0 +1,124 @@
+:root {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  text-align: center;
+  background-color: #180a0a;
+  height: 100vh;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-col {
+  text-align: center;
+
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 4rem 0;
+  width: 48%;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+.flex-justify-c {
+  justify-content: center;
+}
+
+.first-player > :first-child,
+.second-player > :last-child {
+  background-color: #760b55;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 4px,
+    rgba(254, 254, 254, 0.3) 0px 7px 13px -3px,
+    rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+}
+
+.dice {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 7%;
+}
+.spin {
+  animation: spin 1s alternate;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.options {
+  margin-top: 2rem;
+}
+button,
+input {
+  text-align: center;
+  padding: 1rem 2rem;
+  min-width: 10%;
+  max-width: 25%;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #c74b50;
+}
+input {
+  background-color: #eeeeee;
+}
+
+.options > :nth-child(1) > :first-child {
+  background-color: #d49b54;
+}
+
+.popUp-container {
+  position: fixed;
+  /* background: #000000de; */
+  width: 100vw;
+  height: 100vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: all 0.5s;
+}
+.popUp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem 0;
+  position: fixed;
+  background: #2f2323d9;
+  width: 45%;
+  height: 85vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 12px;
+  }
+}
