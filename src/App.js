@@ -41,8 +41,6 @@ export default class App extends Component {
     });
   }
 
-  resetGame = () => {};
-
   isWinner = (players, index) => {
     const scoreTarget = this.state.score;
     if (players[index].score === scoreTarget)
